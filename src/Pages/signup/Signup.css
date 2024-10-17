@@ -1,0 +1,77 @@
+.Signup{
+    background: var(--color-primary);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Signup .card{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 580px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.Signup .card .left{ 
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;    
+}
+
+.Signup h2{
+    color: var(--color-primary);
+}
+
+.Signup .card p{
+    font-size: .9rem;
+}
+
+.Signup .card span{
+    color: var(--color-primary);
+}
+
+.Signup .card .right{
+    flex: 1;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Signup form input{
+    padding: 1rem 0;
+    width: 90%;
+    background: transparent;
+    border: transparent;
+    outline: none;
+    border-bottom: 1px solid white;
+    margin: 0 auto;
+    color: white;
+}
+
+.Signup form input::placeholder{
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.Signup form .btn{
+    color: var(--color-primary);
+    margin-top: 1rem;
+}
+@media (max-width:600px){
+    .Signup .card{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .Signup .card .right{
+        padding-bottom: 20px;
+    }
+}

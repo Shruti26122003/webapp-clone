@@ -1,0 +1,110 @@
+.Message {
+  background-color: var(--color-card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Softer shadow for a modern look */
+  margin-bottom: 1.5rem;
+}
+
+.message-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-top h4 {
+  color: var(--color-primary);
+  font-size: 1.5rem; /* Slightly larger for emphasis */
+  font-weight: bold; /* Bold text for the header */
+  margin: 0;
+}
+
+.message-search {
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  margin: 1rem 0; /* Increased margin for separation */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for input */
+}
+
+.message-search input {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  background: transparent;
+  color: var(--text-color);
+  font-size: 1rem; /* Set a base font size */
+  outline: none; /* Remove outline on focus */
+}
+
+.message-search input::placeholder {
+  color: var(--color-soft);
+}
+
+.border-div {
+  max-height: 400px; /* Set a max height for scrolling */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  border-radius: 8px; /* Rounded corners for the message list */
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding: 1rem; /* Increased padding for better spacing */
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for hover */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.message:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.message:hover {
+  background-color: rgba(108, 99, 255, 0.1); /* Subtle background color on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem; /* Space between user and message body */
+  position: relative; /* For positioning the active status */
+}
+
+.user img {
+  border-radius: 50%; /* Circular user image */
+  width: 48px; /* Adjusted size for better visibility */
+  height: 48px; /* Adjusted size for better visibility */
+  border: 2px solid var(--color-bg); /* Border for the image for a more defined look */
+}
+
+.green-active {
+  background-color: green; /* Active status color */
+  border-radius: 50%; /* Circular active indicator */
+  width: 12px; /* Size of active indicator */
+  height: 12px; /* Size of active indicator */
+  position: absolute;
+  top: 0; /* Align to top */
+  right: 0; /* Align to right */
+  border: 2px solid white; /* White border for better visibility */
+}
+
+.message-body {
+  flex: 1; /* Allow the message body to grow */
+}
+
+.message-body h5 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.1rem; /* Set a base font size */
+  color: var(--color-primary);
+}
+
+.message-body p {
+  margin: 0.2rem 0 0; /* Space above the paragraph */
+  color: var(--color-secondary); /* Color for the message text */
+  font-size: 0.9rem; /* Slightly smaller for the message text */
+  line-height: 1.4; /* Improved readability */
+}

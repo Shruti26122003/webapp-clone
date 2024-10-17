@@ -1,0 +1,87 @@
+nav {
+    height: 3.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering main nav, adjust if needed */
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-primary);
+    position: sticky;
+    z-index: 10;
+    background: var(--color-card);
+    top: 0;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures that nav-left and nav-right are spaced apart */
+    width: 100%; /* Ensures it takes full width */
+}
+
+.nav-container a {
+    color: var(--color-primary);
+    font-size: 1.1rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.Nav-Searchbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 2rem;
+    padding: 5px 10px;
+}
+
+.Nav-Searchbar input {
+    background: transparent;
+    color: var(--color-primary);
+    border: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Ensure the icons align to the right */
+    gap: 30px; /* Space between icons */
+    margin-left: auto; /* This pushes the right section to the far right */
+}
+
+@media (max-width: 768px) {
+    nav.user {
+        display: none;
+    }
+
+    .nav-container a {
+        font-size: 1rem;
+    }
+
+    .nav-container .logo {
+        font-size: 1.3rem;
+    }
+
+    .Nav-Searchbar {
+        border: none;
+    }
+
+    .Nav-Searchbar input {
+        display: none;
+        padding: 0;
+    }
+
+    .nav-left, .nav-right {
+        gap: 20px;
+    }
+}

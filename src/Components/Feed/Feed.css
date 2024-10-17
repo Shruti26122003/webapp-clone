@@ -1,0 +1,71 @@
+.feeds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.feed {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.feed:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.feed .top-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.feed .top-content .user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.feed p {
+    padding: 0 15px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.feed .mid-content img {
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+}
+
+.feed .bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 15px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.feed .bottom-content .icon {
+    font-size: 1.2rem;
+    color: #888;
+    transition: color 0.3s ease;
+}
+
+.feed .bottom-content .icon:hover {
+    color: #555;
+}
