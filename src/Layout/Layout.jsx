@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
-import Login from '../Pages/login/Login';
+import Login from '../Pages/Login/Login';
 import Signup from '../Pages/signup/Signup';
 import Home from '../Pages/Home/Home';
 import Profile from '../Pages/Profile/Profile';
