@@ -1,6 +1,7 @@
 import React from 'react';
 import UserStory from './UserStory';
 import StoriesData from '../../FackApis/StoriesData';
+import profileImage from "../assets/img/storyProfile1.jpg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Stories.css'
