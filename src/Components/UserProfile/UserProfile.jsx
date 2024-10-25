@@ -1,5 +1,5 @@
 import React from 'react';
-import './userprofile.css';
+import './UserProfile.css';
 import CurrentUserData from '../../FackApis/CurrentData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFeed, faLink, faMessage } from '@fortawesome/free-solid-svg-icons';
