@@ -1,6 +1,6 @@
 import React from 'react';
 import UserStory from './UserStory';
-import StoriesData from '../../FakeApis/StoriesData';
+import StoriesData from '../../FacKApis/StoriesData';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './Stories.css';
